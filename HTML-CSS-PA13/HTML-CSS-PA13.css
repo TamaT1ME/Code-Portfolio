@@ -1,0 +1,55 @@
+/* MJ McElroy
+HTML/CSS- PA13
+8/16/2023 */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*Navigation Bar*/
+#navbar {
+    position: left;
+    display: block;
+    top: 0;
+    width: 6%;
+    height: auto;
+    background-color: blue;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* centers the text in the box */
+    background-color: blue;
+    flex-direction: column; /* makes the nav bar links vertical */
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: blue;
+    padding: 8px;
+}
+
+#navbar li {
+    margin: 0 15px;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/*styles the hovered over text*/
+#navbar a:hover {
+    color: rgb(183, 184, 255);
+}
+
+/* the rest of the webpage text, formatted by this section */
+section {
+    display: flex;
+    padding-left: 8px;
+    margin: 0 150px;
+    flex-direction: column;
+}
