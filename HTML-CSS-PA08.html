@@ -1,0 +1,70 @@
+<!-- MJ McElroy
+HTML/CSS- PA08
+8/9/2023 -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS-PA08</title>
+</head>
+<style>
+  #div1, #div2 {
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 4px solid #0e60ca;
+  }
+</style>
+<body>
+  <h3>MJ McElroy<br>
+    HTML/CSS-PA08<br>
+    8/9/2023</h3>
+    
+  <button onclick="getLocation()">Find Location</button>
+
+  <p id="location"></p>
+    
+  <script>
+  var x = document.getElementById("location");
+    
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+      x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+  }
+    
+  function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+  }
+
+  function allowDrop(ev) {
+    ev.preventDefault();
+  }
+
+  function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+
+  function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+  }
+  </script>
+
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img src="img1.png" draggable="true" ondragstart="drag(event)" id="drag1" height="310">
+  </div>
+  
+  <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+</body>
+</html>

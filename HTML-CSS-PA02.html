@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!-- !DOCTYPE is the tag for defining document type and version of HTML to use -->
+<html lang="en" ; dir="ltr">
+  <!-- the html tag connects and contains all of the HTML document, and states it's basic information (in XHTML, the lang attribute is xml:lang) -->
+
+  <head>
+    <!-- the head tag is used as the document's header, can contain other tags like <title>, <link> -->
+    <title>This is a document title.</title>
+  </head>
+
+  <body>
+    <h4>MJ McElroy<br>
+      HTML/CSS- PA01<br>
+      8/1/2023</h4>
+
+    <h3>Basic Tags</h3>
+    <!-- An HTML element is defined by a starting tag -->
+    <!-- the body tag is used to contain the web window's content -->
+    <h4>This is a heading.</h4>
+    <!-- the heading size number goes up from h1 to h6, getting smaller by each number added -->
+
+    <p>This is a paragraph example.</p>
+
+    <p>
+      Line<br />
+      Break<br />
+      Example
+    </p>
+
+    <center>
+      <p>This is an example of the center tag.</p>
+    </center>
+
+    <hr />
+    <!-- this is a visible horizontal line break -->
+
+    <h3>Attributes</h3>
+    <p align="left">This is left aligned.</p>
+    <p align="center">This is center aligned.</p>
+    <p align="right">This is right aligned.</p>
+
+    <pre>
+            let formatting = 'preserved';
+            if(formatting) {
+                console.log('This text is preserved.')
+            };
+    </pre>
+
+    <p>
+      This is an example of a nonbreaking space:
+      "Hello&nbsp;PkmnSwShhhh,&nbsp;welcome&nbsp;back!"
+    </p>
+
+    <h3>Seperating Tags</h3>
+    <div>
+      <!-- this is a divider, it can be used to section elements into a seperate space than everything else -->
+      <p>This is an example of a divider element.</p>
+    </div>
+    <br />
+    <span
+      ><p>
+        This is the example of a
+        <span style="color: green">span element</span> along with CSS.
+      </p></span
+    >
+    <br />
+    <p id="identifyElement">This is an example of the id attribute.</p>
+    <br />
+    <p
+      title="This is an example of a title attribute, which may work differently based on what element it is used by."
+    >
+      First, hover to read. In a paragraph element, the given example is also
+      called a tooltip!
+    </p>
+    <br />
+    <p class="className1 className2 className3">
+      This is an example of the class attribute.
+    </p>
+    <br />
+    <p
+      style="
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #3974e2;
+      "
+    >
+      This is an example of using the CSS utilized style attribute in HTML
+      syntax.
+    </p>
+    <br />
+
+    <p style="color:red">This is the second example of a color attribute, instead of hex, it's the word 'red'.</p>
+    <br />
+
+    <h3>Phrase and Formatting Tags</h3>
+
+    <p>This is an example of <b>bold text</b>.</p>
+    <br />
+    <p>This is an example of <i>italicized text</i>.</p>
+    <br />
+    <p>This is an example of <u>underlined text</u>.</p>
+    <br />
+    <p>This is an example of <tt>monospaced text</tt>.</p>
+    <br />
+    <p>This is an example of <sup>superscript</sup>.</p>
+    <br />
+    <p>This is an example of <sub>subscript</sub>.</p>
+    <br />
+    <p>This is an example of <strike>strikethrough text</strike>.</p>
+    <br />
+    <p>This is an example of <del>deleted</del> <ins>inserted text</ins>.</p>
+    <br />
+    <p>This is an example of <mark>marked text</mark>.</p>
+    <br />
+    <p>This is an example of <em>emphasized text</em>.</p>
+    <br />
+    <p>This is an example of <strong>strong text</strong>.</p>
+    <br />
+    <p>This is an example of <big>big text</big>.</p>
+    <br />
+    <p>This is an example of <small>small text</small>.</p>
+    <br />
+    <p>This is an example of <dfn>special text</dfn>.</p>
+    <!-- dfn stands for definition element -->
+    <br />
+    <p>This is an example of <code>code text</code>.</p>
+    <br />
+    <p>This is an example of <kbd>keyboard entry text</kbd>.</p>
+    <br />
+    <p>This is an example of <var>variable content</var>.</p>
+    <br />
+    <p>This is an example of <samp>sample code output text</samp>.</p>
+    <br />
+    <p>This is an example of <abbr title="<abbr>">abbreviated text</abbr>.</p>
+    <br />
+    <p>
+      This is an example of <acronym title="<acronym>">acronym text</acronym>.
+    </p>
+    <br />
+    <p>
+      <bdo dir="rtl">This is an example of bi-directional override text.</bdo>
+    </p>
+    <br />
+    <p>This is an example of <q>double quoting text</q>.</p>
+    <br />
+    <p>
+      This is an example of <cite>citation text</cite>, used to indicate
+      sources.
+    </p>
+    <br />
+
+    <quote>
+      This is an example of quotes.
+    </quote>
+    <br />
+    <cite>
+      This is an example of citation.
+    </cite>
+    <br />
+    <blockquote>
+      This is an example of blockquotes, used to quote longer external sources.
+    </blockquote>
+    <br />
+    <address>This is an example of address text.</address>
+    <br />
+    <p>
+      <a href="https://www.w3schools.com/">This is an example of a link.</a>
+    </p>
+    <p>
+      <a href="#identifyElement">This is an example of a bookmark.</a>
+    </p>
+    <!-- Some other HTML tags include:
+        valign(aligns on vertical axis. top, middle, bottom)
+        background(takes a URL) alternative is bgcolor(which takes a hex, rgb, or numeric value) -->
+
+    <h3>Meta Tags (Check Code File)</h3>
+
+    <!-- You can add metadata to your web pages by placing <meta> tags inside the header of the document which is represented by <head> and </head> tags.
+      A meta tag can have following attributes in addition to core attributes:
+    name = name for a property, can be anything, keywords, description, author... etc. keywords are used by the search engines while indexing your webpage for searching purpose.
+   content = specifies property's value.
+   scheme = specifies a scheme to interpret the property's value (as declared in the content attribute).
+   http-equiv = Used for http response message headers. For example, http-equiv can be used to refresh the page or to set a cookie. Values include content-type, expires, refresh and set-cookie. -->
+
+    <!-- examples:
+    KEYWORDS
+      <meta name = "keywords" content = "HTML, Meta Tags, Metadata" />
+   DESCRIPTION
+      <meta name = "description" content = "Learning about Meta Tags." />
+   REVISION
+      <meta name = "revised" content = "Tutorialspoint, 3/7/2014" />
+   REFRESHING
+      <meta http-equiv = "refresh" content = "5" /> this would refresh your site every 5 seconds.
+   REDIRECTION
+      <meta http-equiv = "refresh" content = "5; url = http://www.tutorialspoint.com" /> content would redirect after 5 seconds.
+   COOKIES
+      <meta http-equiv = "cookie" content = "userid = xyz; expires = Wednesday, 08-Aug-15 23:59:59 GMT;" /> If you do not include the expiration date and time, the cookie is considered a session cookie and will be deleted when the user exits the browser.
+   AUTHOR NAME
+      <meta name = "author" content = "Mahnaz Mohtashim" />
+   CHARACTER SET
+      <meta http-equiv = "Content-Type" content = "text/html; charset = UTF-8" /> this would change the characters used to UTF-8 format.
+    -->
+   <p>Image Insert Example:
+      <img src="img1.png" height="300px"/></p> <!--(attributes-list: width, height, border, align, alt, etc...)-->
+   <p>Picture Insert Example:
+      <picture>
+        <source media="(min-width: 650px)" srcset="The Journey.png" height="300px">
+        <source media="(min-width: 465px)" srcset="future.png" height="300px">
+        <img src ="img1.png" height="300px"/>
+      </picture>
+   </p>
+    <!-- examples cont'd:
+   EMBED
+      <embed src = "/html/yourfile(.wav, .mpeg, .wmv)" (attributes)>
+         <noembed><img src = "yourimage.gif" alt = "Alternative Media" ></noembed>
+      </embed>
+
+      HTML OBJECT
+        <object data = "data/test(file suffix)" type = "(type/file)" width = "" height = "">
+           <param name = "src" value = "data/test(file suffix)">
+           <param name = "autoplay" value = "false">
+           <param name = "autoStart" value = "0">
+           alt: <a href = "data/test(file suffix)">test(file suffix)</a>
+        </object>
+
+   VIEWPORT INFO & FORMAT
+      The basic properties of the "viewport" <meta> tag include:
+         width=
+         Controls the size of the viewport. It can be set to a specific number of pixels like width=600 or to the special value device-width, which is 100vw, or 100% of the viewport width. Minimum: 1. Maximum: 10000. Negative values: ignored.
+         
+         height=
+         Controls the size of the viewport. It can be set to a specific number of pixels like height=400 or to the special value device-height, which is 100vh, or 100% of the viewport height. Minimum: 1. Maximum: 10000. Negative values: ignored.
+         
+         initial-scale=
+         Controls the zoom level when the page is first loaded. Minimum: 0.1. Maximum: 10. Default: 1. Negative values: ignored.
+         
+         minimum-scale=
+         Controls how much zoom out is allowed on the page. Minimum: 0.1. Maximum: 10. Default: 0.1. Negative values: ignored.
+         
+         maximum-scale=
+         Controls how much zoom in is allowed on the page. Any value less than 3 fails accessibility. Minimum: 0.1. Maximum: 10. Default: 10. Negative values: ignored.
+         
+         user-scalable=
+         Controls whether zoom in and zoom out actions are allowed on the page. Valid values: 0, 1, yes, or no. Default: 1, which is the same as yes. Setting the value to 0, which is the same as no, is against Web Content Accessibility Guidelines (WCAG). WCAG requires a minimum of 2× scaling; however, the best practice is to enable a 5× zoom.
+         
+         interactive-widget=
+         Specifies the effect that interactive UI widgets, such as a virtual keyboard, have on the page's viewports. Valid values: resizes-visual, resizes-content, or overlays-content. Default: resizes-visual.
+      
+      "viewport" <meta> tag example:
+         <meta name="viewport" content="width=device-width, initial-scale=1" />
+    -->
+  </body>
+</html>
